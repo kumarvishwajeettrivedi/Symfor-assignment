@@ -1,6 +1,6 @@
 # Campusify Blog Landing Page
 
-A dynamic blog page built with Next.js 16 and Tailwind CSS. It fetches content from a WordPress API, cleans it up, and displays it with proper SEO.
+A dynamic blog page built with Next.js 16 and Tailwind CSS
 
 ---
 
@@ -60,7 +60,7 @@ WordPress content comes with a lot of inline styles and classes that mess up the
 3. **Remove inline styles** - Got rid of `style="..."` attributes
 4. **Remove WordPress classes** - Cleaned up classes like `wp-block-columns` that break the layout
 
-### Why?
+### because
 
 The raw WordPress content had hardcoded colors, weird spacing, and classes that conflicted with Tailwind. After cleaning, the content inherits the site's typography properly.
 
@@ -120,9 +120,8 @@ I also made sure the heading structure is correct (h1 for title, h2 for sections
 ### Limitations
 
 1. **Inline images** - Images inside the WordPress content can't be optimized by Next.js since they're in `dangerouslySetInnerHTML`
-2. **Cache control** - The WordPress server controls image caching (currently 7 days)
-3. **Bundle size** - Next.js adds some polyfills (~13KB) for older browsers
-4. **Lighthouse scores** - Can vary based on network and browser extensions
+2. **Cache control** - The WordPress server controls image caching its 7 days right now
+3. **Lighthouse scores** - Can vary based on network and browser extensions
 
 ### Things I Would Add Later
 
@@ -142,5 +141,3 @@ I also made sure the heading structure is correct (h1 for title, h2 for sections
 - date-fns
 
 ---
-
-Built for Symfor Technical Assignment
