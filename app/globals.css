@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-roboto);
+  --font-serif: var(--font-serif);
+
+  /* Brand Colors - matching reference */
+  --color-brand-primary: rgb(50, 51, 9);
+  --color-brand-hover: rgb(40, 41, 7);
+  --color-text-primary: rgb(34, 40, 30);
+  --color-text-muted: rgba(35, 41, 31, 0.8);
+
+  --color-gray-50: #f9f9f9;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-700: rgb(34, 40, 30);
+  --color-gray-900: rgb(34, 40, 30);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-700 font-sans antialiased;
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgb(34, 40, 30);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+    color: rgb(34, 40, 30);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-4 md:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-brand-primary text-white px-6 py-2.5 rounded-md font-semibold hover:bg-brand-hover transition-colors shadow-sm;
+  }
+}
+
+/* Blog Content Styles - Matching Reference */
+.prose-content {
+  font-size: 15px;
+  line-height: 26.25px;
+  color: rgb(34, 40, 30);
+}
+
+.prose-content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -1.35px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(34, 40, 30);
+}
+
+.prose-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(34, 40, 30);
+}
+
+.prose-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: rgb(34, 40, 30);
+}
+
+.prose-content p {
+  margin-bottom: 22.5px;
+}
+
+.prose-content ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 22.5px;
+}
+
+.prose-content ul li {
+  margin-bottom: 8px;
+  line-height: 26.25px;
+}
+
+.prose-content ol {
+  list-style-type: decimal;
+  margin-left: 1.25rem;
+  margin-bottom: 22.5px;
+}
+
+.prose-content a {
+  color: rgb(50, 51, 9);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.prose-content blockquote {
+  border-left: 4px solid rgb(50, 51, 9);
+  padding-left: 1.5rem;
+  font-style: italic;
+  margin: 2rem 0;
+  color: rgb(34, 40, 30);
+}
+
+.prose-content img {
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Blog Title Styles */
+.blog-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -1.35px;
+  color: rgb(34, 40, 30);
+}
+
+/* Blog Label */
+.blog-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  color: rgba(35, 41, 31, 0.8);
+}
+
+/* Blog Metadata */
+.blog-meta {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  color: rgba(35, 41, 31, 0.8);
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.567px;
+  color: rgb(34, 40, 30);
+}
+
+/* Sidebar Link */
+.sidebar-link {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(34, 40, 30);
+}
